@@ -1,0 +1,40 @@
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  userId    Int      @id @default(autoincrement())
+  name      String
+  email     String   @default("")
+  password  String
+  phone     String   @unique
+  createdAt DateTime @default(now())
+  contacts  Contact[]
+  spams      Spam[]
+}
+
+model Contact {
+  contactId    Int      @id @default(autoincrement())
+  userId Int
+  user  User     @relation(fields: [userId], references: [userId])
+  name      String
+  email     String   @default("")
+  phone     String
+  spamCount Int @default(0)
+  createdAt DateTime @default(now())
+  spams      Spam[]
+}
+
+model Spam {
+  spamId    Int      @id @default(autoincrement())
+  contactId Int
+  userId Int
+  contact   Contact @relation(fields: [contactId], references: [contactId])
+  user      User    @relation(fields: [userId], references: [userId])
+  createdAt DateTime @default(now())
+}
