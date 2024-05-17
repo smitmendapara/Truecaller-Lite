@@ -9,14 +9,22 @@ router.post('/sign-up',
     userValidator.signUpValidations,
 userController.signUp);
 
+// * POST sign in
+router.post('/sign-in',
+    userValidator.signInValidations,
+userController.signIn);
+
 // * POST import contact
 router.post('/import-contact',
     authMiddleware.authenticate,
 userController.importContact);
 
-// * POST sign in
-router.post('/sign-in',
-    userValidator.signInValidations,
-userController.signIn);
+
+
+// * POST spam phone
+router.post('/spam-phone',
+    authMiddleware.authenticate,
+    userValidator.spamPhoneValidations,
+userController.spamPhone);
 
 module.exports = router;

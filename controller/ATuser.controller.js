@@ -17,6 +17,8 @@ const serviceHandler = (func) => async (req, res) => {
 
 module.exports = {
     signUp: serviceHandler(userService.signUpService),
+    signIn: serviceHandler(userService.signInService),
     importContact: serviceHandler(userService.importContactService),
-    signIn: serviceHandler(userService.signInService)
+
+    spamPhone: serviceHandler(userService.spamPhoneService),
 }

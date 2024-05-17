@@ -69,20 +69,15 @@ const signUpValidations = validate([
         .notEmpty().withMessage(NAME_REQUIRE)
 ]);
 
-const importContactValidations = validate([
-    check('userId')
-    .custom(async userId => {
-        if (!await prisma.user.count({ where: { userId }})) {
-            throw new Error(USERID_NOT_EXIST);
-        }
-    }),
-
-    check('contacts')
-        .notEmpty().withMessage(CONTACTS_REQUIRE),
+const spamPhoneValidations = validate([
+    check('phone')
+        .notEmpty().withMessage(PHONE_REQUIRED)
+        .isLength({ min: TEN, max: TEN }).withMessage(INVALID_PHONE)
+        .isNumeric().withMessage(NUMERIC_PHONE)
 ]);
 
 module.exports = {
     signInValidations,
     signUpValidations,
-    importContactValidations
+    spamPhoneValidations
 };
