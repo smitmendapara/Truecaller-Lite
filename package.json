@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "migrate": "npx prisma migrate dev",
-    "prod": "npx prisma migrate dev && nodemon index.js"
+    "prod": "npx prisma migrate dev --name init && nodemon index.js"
   },
   "keywords": [],
   "author": "",
