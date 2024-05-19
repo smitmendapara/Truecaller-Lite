@@ -19,6 +19,7 @@ module.exports = {
     signUp: serviceHandler(userService.signUpService),
     signIn: serviceHandler(userService.signInService),
     importContact: serviceHandler(userService.importContactService),
-
     spamPhone: serviceHandler(userService.spamPhoneService),
+    searchUser: serviceHandler(userService.searchUserService),
+    viewDetail: serviceHandler(userService.viewDetailService),
 }

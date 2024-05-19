@@ -19,12 +19,22 @@ router.post('/import-contact',
     authMiddleware.authenticate,
 userController.importContact);
 
-
-
 // * POST spam phone
 router.post('/spam-phone',
     authMiddleware.authenticate,
     userValidator.spamPhoneValidations,
 userController.spamPhone);
+
+// * GET search user
+router.get('/search-user',
+    authMiddleware.authenticate,
+    userValidator.searchUserValidations,
+userController.searchUser);
+
+// * GET view detail
+router.get('/view-detail',
+    authMiddleware.authenticate,
+    userValidator.viewDetailValidations,
+userController.viewDetail);
 
 module.exports = router;

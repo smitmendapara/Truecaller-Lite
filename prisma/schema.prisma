@@ -8,35 +8,42 @@ generator client {
 }
 
 model User {
-  userId    Int      @id @default(autoincrement())
-  name      String
-  email     String   @default("")
-  password  String
-  phone     String   @unique
-  spamCount Int @default(0)
-  createdAt DateTime @default(now())
-  contacts  Contact[]
-  spams      Spam[]
+  userId            Int             @id @default(autoincrement())
+  name             String
+  email             String        @default("")
+  password      String
+  phone            String       @unique
+  spamCount   Int             @default(0)
+  createdAt      DateTime  @default(now())
+  contacts        Contact[]
+  spams            Spam[]
+
+  @@index([userId, phone])
 }
 
 model Contact {
-  contactId    Int      @id @default(autoincrement())
-  userId Int
-  user  User     @relation(fields: [userId], references: [userId])
-  name      String
-  email     String   @default("")
-  phone     String
-  spamCount Int @default(0)
-  createdAt DateTime @default(now())
-  // spams      Spam[]
+  contactId       Int               @id @default(autoincrement())
+  userId            Int
+  name             String
+  email             String          @default("")
+  phone            String
+  spamCount   Int               @default(0)
+  createdAt      DateTime   @default(now())
+
+  user              User            @relation(fields: [userId], references: [userId])
+
+  @@index([name])
+  @@index([contactId, userId, phone])
 }
 
 model Spam {
-  spamId    Int      @id @default(autoincrement())
-  // contactId Int
-  userId Int
-  phone String
-  // contact   Contact @relation(fields: [contactId], references: [contactId])
-  user      User    @relation(fields: [userId], references: [userId])
-  createdAt DateTime @default(now())
+  spamId      Int             @id @default(autoincrement())
+  userId        Int
+  phone        String
+  createdAt  DateTime @default(now())
+
+  user           User         @relation(fields: [userId], references: [userId])
+
+  @@unique([userId, phone], name: "userId_phone")
+  @@index([userId, phone])
 }

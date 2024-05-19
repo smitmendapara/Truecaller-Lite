@@ -24,6 +24,8 @@ const BOOLEAN_TRUE = true
 
 const BOOLEAN_FALSE = false
 
+const ZERO = 0
+
 const ONE = 1
 
 const SIX = 6
@@ -34,13 +36,15 @@ const USER = 'user'
 
 const AUTH = 'auth'
 
+const COMMON = 'common'
+
 const STATUS_200 = 200
 
 const STATUS_400 = 400
 
 const STATUS_403 = 403
 
-const BAD_REQUEST = 'something went wrong.'
+const BAD_REQUEST = 'Something was broken!'
 
 const HIGH_PRIORITY_LOG = 'high'
 
@@ -49,11 +53,11 @@ const MEDIUM_PRIORITY_LOG = 'medium'
 const LOW_PRIORITY_LOG = 'low'
 
 
-const PHONE_REQUIRED = 'Phone number is required'
+const PHONE_REQUIRED = 'Phone number is required!'
 
-const INVALID_PHONE = 'Phone number must be 10 digits'
+const INVALID_PHONE = 'Phone number must be 10 digits!'
 
-const NUMERIC_PHONE = 'Phone number must be numeric'
+const NUMERIC_PHONE = 'Phone number must be numeric!'
 
 const USER_NOT_REGISTER = 'User not registered!'
 
@@ -77,13 +81,15 @@ const PASS_CONTAIN_DIGIT = 'Password must contain at least one number.'
 
 const INVALID_EMAIL = 'Invalid e-Mail address.'
 
-const NAME_REQUIRE = 'Name is required.'
+const NAME_REQUIRE = 'Name is required!'
 
-const USERID_REQUIRE = 'userId is required.'
+const PAGE_REQUIRE = 'Page is required!'
 
-const USERID_NOT_EXIST = 'provided userId is not exist!'
+const PAGE_POSITIVE_NUMBER = 'Page must be a positive integer!'
 
-const CONTACTS_REQUIRE = 'contacts field is required!'
+const SEARCH_REQUIRE = 'Search is required!'
+
+const ID_REQUIRE = 'Id is required!'
 
 
 const AUTHORIZATION = 'authorization'
@@ -92,6 +98,23 @@ const ACCESS_DENIED = 'access denied!'
 
 const UNAUTHORIZED_USER = 'unauthorized user!'
 
+const REQUESTED_RECORD = 10
+
+const DATA_FETCHED = 'data fetched!'
+
+const DATA_NOT_FOUND = 'data not found!'
+
+const ASC_ORDER = 'asc'
+
+const DESC_ORDER = 'desc'
+
+const PHONE_SPAMMED = 'Phone has been spammed!'
+
+const EMPTY_STRING = ''
+
+const CONTACT_IMPOTED = 'Contact has been imported.'
+
+const CONTACT_NOT_IMPORTED = 'Contact has not been imported.'
 
 module.exports = {
     DB_CONNECTED,
@@ -107,11 +130,13 @@ module.exports = {
 
     BOOLEAN_TRUE,
     BOOLEAN_FALSE,
+    ZERO,
     ONE,
     SIX,
     TEN,
     USER,
     AUTH,
+    COMMON,
     STATUS_200,
     STATUS_400,
     STATUS_403,
@@ -136,12 +161,21 @@ module.exports = {
     INVALID_EMAIL,
     PASS_CHAR_SIZE,
     NAME_REQUIRE,
-    USERID_REQUIRE,
-    USERID_NOT_EXIST,
-    CONTACTS_REQUIRE,
-
+    PAGE_REQUIRE,
+    PAGE_POSITIVE_NUMBER,
+    SEARCH_REQUIRE,
+    ID_REQUIRE,
 
     AUTHORIZATION,
     ACCESS_DENIED,
-    UNAUTHORIZED_USER
+    UNAUTHORIZED_USER,
+    REQUESTED_RECORD,
+    DATA_FETCHED,
+    DATA_NOT_FOUND,
+    ASC_ORDER,
+    DESC_ORDER,
+    PHONE_SPAMMED,
+    EMPTY_STRING,
+    CONTACT_IMPOTED,
+    CONTACT_NOT_IMPORTED
 }
