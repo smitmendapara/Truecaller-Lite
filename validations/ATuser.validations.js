@@ -1,7 +1,7 @@
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
-
 const { check, validationResult } = require('express-validator');
+
 const _commonUtil = require('../util/ATcommon.util');
 const _constantUtil = require('../util/ATcontant.util');
 

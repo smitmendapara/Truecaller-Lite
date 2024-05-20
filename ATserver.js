@@ -8,8 +8,8 @@ const _loggerUtil = require('./util/ATlogger.util');
 const userRoutes = require('./routes/ATuser.routes');
 
 const { 
-    DB_CONNECTED, DB_NOT_CONNECTED, DEFAULT_SERVER_PORT, SERVER_STARTED, SERVER_NOT_STARTED, BOOLEAN_TRUE,
-    BOOLEAN_FALSE, ONE, PRODUCT_API_PREFIX, USER
+  DB_CONNECTED, DB_NOT_CONNECTED, DEFAULT_SERVER_PORT, SERVER_STARTED, SERVER_NOT_STARTED, BOOLEAN_TRUE,
+  BOOLEAN_FALSE, ONE, PRODUCT_API_PREFIX, USER
 } = _constantUtil;
 
 const app = express();
@@ -20,6 +20,7 @@ const API = process.env.API_PREFIX || PRODUCT_API_PREFIX;
 
 app.use(`${API + USER}`, userRoutes);
 
+// * check connection
 async function checkConnection() {
   try {
     await prisma.$connect();
@@ -32,11 +33,12 @@ async function checkConnection() {
   }
 }
 
+// * start server
 async function startServer() {
   const isConnected = await checkConnection();
   if (isConnected) {
     app.listen(port, () => {
-        _loggerUtil.info(`${SERVER_STARTED + port}`);
+      _loggerUtil.info(`${SERVER_STARTED + port}`);
     });
   } 
   else {

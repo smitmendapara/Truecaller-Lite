@@ -1,0 +1,843 @@
+{
+	"info": {
+		"_postman_id": "df89897c-eeaa-493e-970c-19ca0ab50f4a",
+		"name": "Authenticate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30939943"
+	},
+	"item": [
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\": \"9354089996\",\r\n    \"password\": \"xyz123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/sign-in",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"sign-in"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"8789364576\",\r\n    \"password\": \"alr113\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/sign-in",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"sign-in"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"46-PpBH6gmJM/vy+dfQzFWLH5EyLaM\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:39:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"code\": 422,\n    \"message\": \"User not registered!\",\n    \"data\": {}\n}"
+				},
+				{
+					"name": "Sign In",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"8789364576\",\r\n    \"password\": \"alr113\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/sign-in",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"sign-in"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "258"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"102-JHPCePJbjqt4tVQ/3K+LFO7k988\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:45:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"sign-in successful!\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInBob25lIjoiODc4OTM2NDU3NiIsImlhdCI6MTcxNjIwOTE0NH0.9wRjUeAzCBVmNK3rKvEi4DhRw379nfSpP3Q4Y-Wjw4c\",\n        \"userId\": 6,\n        \"phone\": \"8789364576\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\": \"6854089795\",\r\n    \"password\": \"abc123\",\r\n    \"email\": \"abwrfyui34@gmail.com\",\r\n    \"name\": \"abc user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/sign-up",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"sign-up"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sign Up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"6854089795\",\r\n    \"password\": \"abc123\",\r\n    \"email\": \"abwrfyui34@gmail.com\",\r\n    \"name\": \"abc user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/sign-up",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"sign-up"
+							]
+						}
+					},
+					"status": "Unprocessable Entity",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "85"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"55-J6ev9xcRLrvLfABIpmHQUSiL5uw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:42:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"code\": 422,\n    \"message\": \"Phone number is already registered.\",\n    \"data\": {}\n}"
+				},
+				{
+					"name": "Sign Up",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\": \"8789364576\",\r\n    \"password\": \"alr113\",\r\n    \"email\": \"alr113@gmail.com\",\r\n    \"name\": \"ali\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/sign-up",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"sign-up"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "258"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"102-nuYVlxRuFOTDFGVjJ4vsVoLskYQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:43:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"sign-up successful!\",\n    \"data\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjYsInBob25lIjoiODc4OTM2NDU3NiIsImlhdCI6MTcxNjIwOTAxMX0.qrdtokrIlfUDLPUsv6mhmHtU6nrOiWAdYYpswOTXdUg\",\n        \"userId\": 6,\n        \"phone\": \"8789364576\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Import Contact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contacts\": [\r\n        {\r\n            \"phone\": \"9876543210\",\r\n            \"email\": \"abc45@example.com\",\r\n            \"name\": \"John 4528\"\r\n        },\r\n        {\r\n            \"phone\": \"9743210987\",\r\n            \"email\": \"def@example.com\",\r\n            \"name\": \"Johe 2242\"\r\n        },\r\n        {\r\n            \"phone\": \"5987654321\",\r\n            \"email\": \"\",\r\n            \"name\": \"423 Johnson\"\r\n        },\r\n        {\r\n            \"phone\": \"5432109876\",\r\n            \"email\": \"ghi@example.com\",\r\n            \"name\": \"john Brown\"\r\n        },\r\n        {\r\n            \"phone\": \"7676543210\",\r\n            \"email\": \"jklbg@example.com\",\r\n            \"name\": \"john Lee\"\r\n        }\r\n    \r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/import-contact",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"import-contact"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Import Contact",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"contacts\": [\r\n        {\r\n            \"phone\": \"6543210987\",\r\n            \"email\": \"abc@example.com\",\r\n            \"name\": \"John Doe\"\r\n        },\r\n        {\r\n            \"phone\": \"5768901234\",\r\n            \"email\": \"def@example.com\",\r\n            \"name\": \"Jane Smith\"\r\n        },\r\n        {\r\n            \"phone\": \"5987654321\",\r\n            \"email\": \"\",\r\n            \"name\": \"Alice Johnson\"\r\n        },\r\n        {\r\n            \"phone\": \"5432109876\",\r\n            \"email\": \"ghi@example.com\",\r\n            \"name\": \"Bob Brown\"\r\n        },\r\n        {\r\n            \"phone\": \"9876543210\",\r\n            \"email\": \"jkl@example.com\",\r\n            \"name\": \"David Lee\"\r\n        }\r\n    \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/import-contact",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"import-contact"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "75"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4b-phNdxIPFqDh/6XiNhq2zJK7QDBo\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 May 2024 19:02:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"Contact has been imported.\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Spam Phone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone\": \"7676543210\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/spam-phone",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"spam-phone"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Spam Phone",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"phone\": \"7676543210\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/spam-phone",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"spam-phone"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "72"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"48-hmPDWtrV155RGCAKKnQ7tB28GDc\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:35:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"Phone has been spammed!\",\n    \"data\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Search User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/search-user?search=joh&page=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"search-user"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "joh"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Search User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/search-user?search=joh&page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"search-user"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "joh"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "489"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e9-O92yiOMRtN0RfE3Zt651tnHwi1s\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:40:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"data fetched!\",\n    \"data\": {\n        \"records\": [\n            {\n                \"phone\": \"9876543210\",\n                \"name\": \"John 4528\",\n                \"spamCount\": 0,\n                \"id\": 2,\n                \"type\": \"contact\"\n            },\n            {\n                \"phone\": \"9743210987\",\n                \"name\": \"Johe 2242\",\n                \"spamCount\": 0,\n                \"id\": 3,\n                \"type\": \"contact\"\n            },\n            {\n                \"phone\": \"5432109876\",\n                \"name\": \"john Brown\",\n                \"spamCount\": 0,\n                \"id\": 5,\n                \"type\": \"contact\"\n            },\n            {\n                \"phone\": \"7676543210\",\n                \"name\": \"john Lee\",\n                \"spamCount\": 1,\n                \"id\": 6,\n                \"type\": \"contact\"\n            },\n            {\n                \"phone\": \"5987654321\",\n                \"name\": \"423 Johnson\",\n                \"spamCount\": 0,\n                \"id\": 4,\n                \"type\": \"contact\"\n            }\n        ],\n        \"per_page\": 10\n    }\n}"
+				},
+				{
+					"name": "Search User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/search-user?search=9876543210&page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"search-user"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "9876543210"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "167"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a7-x9aLJxLnxERxHRdSMbJliRtF3nw\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:40:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"data fetched!\",\n    \"data\": {\n        \"records\": [\n            {\n                \"phone\": \"9876543210\",\n                \"name\": \"John 4528\",\n                \"spamCount\": 0,\n                \"id\": 2,\n                \"type\": \"contact\"\n            }\n        ],\n        \"per_page\": 10\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "View Detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/user/view-detail?id=1&phone=6854089795",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"view-detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "phone",
+							"value": "6854089795"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Detail",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/user/view-detail?id=1&phone=6854089795",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user",
+								"view-detail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								},
+								{
+									"key": "phone",
+									"value": "6854089795"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "145"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"91-zy0tu1Hf7bgSObWlNR27kgFqEKg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 May 2024 12:40:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"code\": 200,\n    \"message\": \"data fetched!\",\n    \"data\": {\n        \"phone\": \"6854089795\",\n        \"email\": \"abwrfyui34@gmail.com\",\n        \"name\": \"abc user\",\n        \"spamCount\": 0\n    }\n}"
+				}
+			]
+		}
+	]
+}

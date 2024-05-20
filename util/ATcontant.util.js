@@ -10,15 +10,11 @@ const DEFAULT_SERVER_PORT = 3000
 
 const PRODUCT_API_PREFIX = '/api/'
 
-
-
 const ERROR_LOG = 'error'
 
 const INFO_LOG = 'info'
 
 const LOG_TIMESTAMP_FORMAT = 'DD-MMM-YYYY HH:mm:ss'
-
-
 
 const BOOLEAN_TRUE = true
 
@@ -53,7 +49,6 @@ const HIGH_PRIORITY_LOG = 'high'
 const MEDIUM_PRIORITY_LOG = 'medium'
 
 const LOW_PRIORITY_LOG = 'low'
-
 
 const PHONE_REQUIRED = 'Phone number is required!'
 
@@ -93,7 +88,6 @@ const SEARCH_REQUIRE = 'Search is required!'
 
 const ID_REQUIRE = 'Id is required!'
 
-
 const AUTHORIZATION = 'authorization'
 
 const ACCESS_DENIED = 'access denied!'
@@ -125,11 +119,9 @@ module.exports = {
     SERVER_NOT_STARTED,
     DEFAULT_SERVER_PORT,
     PRODUCT_API_PREFIX,
-
     ERROR_LOG,
     INFO_LOG,
     LOG_TIMESTAMP_FORMAT,
-
     BOOLEAN_TRUE,
     BOOLEAN_FALSE,
     ZERO,
@@ -144,11 +136,9 @@ module.exports = {
     STATUS_403,
     STATUS_422,
     BAD_REQUEST,
-
     HIGH_PRIORITY_LOG,
     MEDIUM_PRIORITY_LOG,
     LOW_PRIORITY_LOG,
-
     PHONE_REQUIRED,
     NUMERIC_PHONE,
     INVALID_PHONE,
@@ -168,7 +158,6 @@ module.exports = {
     PAGE_POSITIVE_NUMBER,
     SEARCH_REQUIRE,
     ID_REQUIRE,
-
     AUTHORIZATION,
     ACCESS_DENIED,
     UNAUTHORIZED_USER,
