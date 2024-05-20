@@ -5,55 +5,64 @@ https://authenticate-assessment.onrender.com/api
 
 ## API Endpoints
 
-1. Sign Up
-Endpoint: /user/sign-up
-Method: POST
-Payload: {
+### 1. Sign Up
+**Endpoint:** `/user/sign-up`  
+**Method:** POST  
+**Payload:**
+```json
+{
   "phone": "8789364576",
   "password": "alr113",
   "email": "alr113@gmail.com",
   "name": "ali"
 }
+```
 
 Description: Registers a new user with the provided phone number, password, email, and name.
 
-2. Sign In
-Endpoint: /user/sign-in
-Method: POST
-Payload: {
+### 2. Sign In
+**Endpoint:** `/user/sign-in`  
+**Method:** POST  
+**Payload:**
+```json
+{
   "phone": "8789364576",
   "password": "alr113"
 }
+```
 
 Description: Authenticates a user using their phone number and password.
 
-3. Search User
-Endpoint: /user/search-user
-Method: GET
-Query Parameters: search=9876543210&page=1
+### 3. Search User
+**Endpoint:** `/user/search-user?search=9876543210&page=1`  
+**Method:** GET
 
 Description: Searches for a user by phone number and returns paginated results.
 
-4. View Detail
-Endpoint: /user/view-detail
-Method: GET
-Query Parameters: id=1&phone=6854089795
+### 4. View Detail
+**Endpoint:** `/user/view-detail?id=1&phone=6854089795`  
+**Method:** GET
 
-Description: Retrieves detailed information about a user based on their ID and phone number.
+Description: Retrieves detailed information about a contact based on their ID and phone number.
 
-5. Spam Phone
-Endpoint: /user/spam-phone
-Method: POST
-Payload: {
+### 5. Spam Phone
+**Endpoint:** `/user/spam-phone`  
+**Method:** POST  
+**Payload:**
+```json
+{
   "phone": "7676543210"
 }
+```
 
 Description: Marks a phone number as spam.
 
-6. Import Contact
-Endpoint: /user/import-contact
-Method: POST
-Payload: {
+### 6. Import Contact
+**Endpoint:** `/user/import-contact`  
+**Method:** POST  
+**Payload:**
+```json
+{
   "contacts": [
     {
      "phone": "9876543210",
@@ -82,6 +91,7 @@ Payload: {
     }
   ]
 }
+```
 
 Description: Imports a list of contacts.
 
