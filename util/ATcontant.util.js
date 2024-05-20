@@ -112,7 +112,7 @@ const PHONE_SPAMMED = 'Phone has been spammed!'
 
 const EMPTY_STRING = ''
 
-const CONTACT_IMPOTED = 'Contact has been imported.'
+const CONTACT_IMPORTED = 'Contact has been imported.'
 
 const CONTACT_NOT_IMPORTED = 'Contact has not been imported.'
 
@@ -176,6 +176,6 @@ module.exports = {
     DESC_ORDER,
     PHONE_SPAMMED,
     EMPTY_STRING,
-    CONTACT_IMPOTED,
+    CONTACT_IMPORTED,
     CONTACT_NOT_IMPORTED
 }
