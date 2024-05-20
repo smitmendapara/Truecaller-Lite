@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"phone\": \"9354089996\",\r\n    \"password\": \"xyz123\"\r\n}",
+					"raw": "{\r\n    \"phone\": \"8789364576\",\r\n    \"password\": \"alr113\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,12 +21,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/user/sign-in",
+					"raw": "{{url}}/user/sign-in",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"api",
 						"user",
 						"sign-in"
 					]
@@ -48,12 +47,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/sign-in",
+							"raw": "{{url}}/user/sign-in",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"sign-in"
 							]
@@ -110,12 +108,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/sign-in",
+							"raw": "{{url}}/user/sign-in",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"sign-in"
 							]
@@ -166,7 +163,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"phone\": \"6854089795\",\r\n    \"password\": \"abc123\",\r\n    \"email\": \"abwrfyui34@gmail.com\",\r\n    \"name\": \"abc user\"\r\n}",
+					"raw": "{\r\n    \"phone\": \"8789364576\",\r\n    \"password\": \"alr113\",\r\n    \"email\": \"alr113@gmail.com\",\r\n    \"name\": \"ali\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -174,12 +171,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/user/sign-up",
+					"raw": "{{url}}/user/sign-up",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"api",
 						"user",
 						"sign-up"
 					]
@@ -201,12 +197,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/sign-up",
+							"raw": "{{url}}/user/sign-up",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"sign-up"
 							]
@@ -263,12 +258,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/sign-up",
+							"raw": "{{url}}/user/sign-up",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"sign-up"
 							]
@@ -332,12 +326,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/user/import-contact",
+					"raw": "{{url}}/user/import-contact",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"api",
 						"user",
 						"import-contact"
 					]
@@ -364,12 +357,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/import-contact",
+							"raw": "{{url}}/user/import-contact",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"import-contact"
 							]
@@ -433,12 +425,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/user/spam-phone",
+					"raw": "{{url}}/user/spam-phone",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"api",
 						"user",
 						"spam-phone"
 					]
@@ -465,12 +456,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/spam-phone",
+							"raw": "{{url}}/user/spam-phone",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"spam-phone"
 							]
@@ -537,19 +527,18 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/user/search-user?search=joh&page=1",
+					"raw": "{{url}}/user/search-user?search=9876543210&page=1",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"api",
 						"user",
 						"search-user"
 					],
 					"query": [
 						{
 							"key": "search",
-							"value": "joh"
+							"value": "9876543210"
 						},
 						{
 							"key": "page",
@@ -579,12 +568,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/search-user?search=joh&page=1",
+							"raw": "{{url}}/user/search-user?search=joh&page=1",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"search-user"
 							],
@@ -656,12 +644,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/search-user?search=9876543210&page=1",
+							"raw": "{{url}}/user/search-user?search=9876543210&page=1",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"search-user"
 							],
@@ -738,12 +725,11 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/user/view-detail?id=1&phone=6854089795",
+					"raw": "{{url}}/user/view-detail?id=1&phone=6854089795",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"api",
 						"user",
 						"view-detail"
 					],
@@ -780,12 +766,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/api/user/view-detail?id=1&phone=6854089795",
+							"raw": "{{url}}/user/view-detail?id=1&phone=6854089795",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
-								"api",
 								"user",
 								"view-detail"
 							],
