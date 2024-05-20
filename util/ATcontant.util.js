@@ -44,6 +44,8 @@ const STATUS_400 = 400
 
 const STATUS_403 = 403
 
+const STATUS_422 = 422
+
 const BAD_REQUEST = 'Something was broken!'
 
 const HIGH_PRIORITY_LOG = 'high'
@@ -140,6 +142,7 @@ module.exports = {
     STATUS_200,
     STATUS_400,
     STATUS_403,
+    STATUS_422,
     BAD_REQUEST,
 
     HIGH_PRIORITY_LOG,

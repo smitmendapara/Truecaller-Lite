@@ -6,7 +6,7 @@ const _commonUtil = require('../util/ATcommon.util');
 const _constantUtil = require('../util/ATcontant.util');
 
 const { 
-    BOOLEAN_FALSE, STATUS_200, BOOLEAN_TRUE, INVALID_PHONE, PHONE_REQUIRED, NUMERIC_PHONE, TEN, INCORRECT_PASSWORD,
+    BOOLEAN_FALSE, STATUS_422, BOOLEAN_TRUE, INVALID_PHONE, PHONE_REQUIRED, NUMERIC_PHONE, TEN, INCORRECT_PASSWORD,
     USER_NOT_REGISTER, PHONE_ALREADY_REGISTER, NAME_REQUIRE, PASS_CHAR_SIZE, PASS_REQUIRE, PASS_CONTAIN_LETTER,
     PASS_CONTAIN_DIGIT, INVALID_EMAIL, SIX, ZERO, SEARCH_REQUIRE, PAGE_REQUIRE, PAGE_POSITIVE_NUMBER, ID_REQUIRE
 } = _constantUtil;
@@ -17,7 +17,7 @@ const validate = (validations) => [
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             const [firstError] = errors.array();
-            return _commonUtil.getJSONResponse(res, BOOLEAN_FALSE, STATUS_200, firstError.msg, {});
+            return _commonUtil.getJSONResponse(res, BOOLEAN_FALSE, STATUS_422, firstError.msg, {});
         }
         next();
     }

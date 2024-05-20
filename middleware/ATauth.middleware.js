@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const _commonUtil = require('../util/ATcommon.util');
 const _constantUtil = require('../util/ATcontant.util');
 
-const { STATUS_400, STATUS_403, ACCESS_DENIED, UNAUTHORIZED_USER, AUTHORIZATION, BOOLEAN_FALSE } = _constantUtil;
+const { STATUS_403, ACCESS_DENIED, UNAUTHORIZED_USER, AUTHORIZATION, BOOLEAN_FALSE } = _constantUtil;
 
 // * user authentication
 async function authenticate(req, res, next) {
