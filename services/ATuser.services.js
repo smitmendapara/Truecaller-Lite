@@ -29,6 +29,17 @@ async function signUpService(req, res) {
             } 
         });
 
+        // * import new contact
+        const newContact = await prisma.contact.create({ 
+            data: {
+                userId: newUser.userId,
+                phone,
+                name,
+                email: email || EMPTY_STRING,
+                spamCount
+            } 
+        });
+
         // * create json web token
         const jwtToken = jwt.sign({
             userId: newUser.userId,
@@ -43,7 +54,7 @@ async function signUpService(req, res) {
         }
 
         // * api response
-        if (newUser)
+        if (newUser && newContact)
             return _commonUtil.getJSONResponse(res, BOOLEAN_TRUE, STATUS_200, SIGN_UP_SUCCESS, data);
         _commonUtil.getJSONResponse(res, BOOLEAN_FALSE, STATUS_200, SIGN_UP_FAILED, {});
     } 

@@ -35,8 +35,8 @@ async function checkConnection() {
 async function startServer() {
   const isConnected = await checkConnection();
   if (isConnected) {
-    app.listen(3000, () => {
-        _loggerUtil.info(`${SERVER_STARTED + 3000}`);
+    app.listen(port, () => {
+        _loggerUtil.info(`${SERVER_STARTED + port}`);
     });
   } 
   else {

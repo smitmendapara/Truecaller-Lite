@@ -1,16 +1,16 @@
 {
-  "name": "my-prisma-project",
+  "name": "authenticate-assessment",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Authenticate Assessment",
+  "main": "ATserver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js",
+    "dev": "nodemon ATserver.js",
     "migrate": "npx prisma migrate dev",
-    "prod": "npx prisma migrate dev --name init && nodemon index.js"
+    "prod": "npx prisma migrate deploy && nodemon ATserver.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "smitmendapara0910@gmail.com",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^5.14.0",
