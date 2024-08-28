@@ -1,4 +1,4 @@
-# API Documentation for Authenticate Assessment
+# API Documentation for Trucaller Lite
 
 ## Base URL
 https://authenticate-assessment.onrender.com/api
